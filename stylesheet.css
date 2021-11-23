@@ -36,7 +36,7 @@ main {
 
 .container-first {
     width: 24rem;
-    height: 38rem;
+    height: 39rem;
     margin: auto;
     background-color: rgb(9, 20, 36);
     border-radius: 75px;
@@ -44,27 +44,70 @@ main {
 
 .container {
     width: 22rem;
-    height: 35rem;
+    height: 36rem;
     margin: auto;
     background-color: var(--Very-dark-blue-med);
     margin-bottom: 30px;
     border-radius: 17px;
-}
-
-.container::before {
-    width: 30rem;
-    height: 40rem;
-    background-color: var(--Very-dark-blue-med);
+    padding-top: 10px;
 }
 
 .gambar {
+    position: relative;
+    background-image: url(images/image-equilibrium.jpg);
+    background-size: 321px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
     height: 20rem;
     width: 19rem;
     margin: auto;
     margin-bottom: 7px;
+    margin-top: 10px;
+}
+
+.img-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 320px;
+    top: 0px;
+}
+
+.img-wrapper:hover {
+    background-image: url(images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: 141px 136px;
+    z-index: 1;
+}
+
+/* .preview {
+    position: absolute;
+    display: none;
+    height: 40px;
+    width: 40px;
+    top: 132px;
+    left: 142px;
+}
+
+.preview:hover {
+    display: block;
+} */
+
+.cover {
+    width: 100%;
+    height: 320px;
+}
+
+.cover:hover {
+    background-color: var(--Cyan);
+    opacity: 0.5;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .gambar > .gambar-eth {
+    /* background-image: url(images/image-equilibrium.jpg);
+    background-repeat: no-repeat;
+    background-size: 304px; */
     height: 19rem;
     width: 19rem;
     margin-top: 20px;
@@ -83,6 +126,11 @@ main {
     font-size: 19px;
     margin-bottom: 19px;
     margin-top: 23px;
+}
+
+.caption > h2:hover {
+    color: var(--Cyan);
+    cursor: pointer;
 }
 
 .caption > p {
@@ -158,6 +206,11 @@ main {
 
 span {
     color: white;
+}
+
+span:hover {
+    color: var(--Cyan);
+    cursor: pointer;
 }
 
 .attribution { font-size: 11px; text-align: center; }

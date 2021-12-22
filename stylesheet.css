@@ -102,6 +102,7 @@ main {
     opacity: 0.5;
     border-radius: 10px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .gambar > .gambar-eth {
